@@ -19,7 +19,6 @@ function increaseLength () {
     length += distancePerPoint;  //increase the offset value
     orig.style.strokeDasharray = pathLength; //make strokeDashArray to fill up the entire svg which is equal to path length
     orig.style.strokeDashoffset = pathLength - length; //decrease the offset so that the line can be longer 
-    console.log(orig.style.strokeDashoffset)
     if(orig.style.strokeDashoffset <= 2690 || orig.style.strokeDashoffset <= `2690px`) { //2690 is an offset value as svg has few path that aren't buidling any visible lines, needs to be changed as per your svg file
         orig.style.fill = fillColor; //once the path been built, fill the svg path with the color
         stopDraw(); //clear the interval
