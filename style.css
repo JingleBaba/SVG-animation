@@ -1,0 +1,4 @@
+#svg_path {
+    stroke: none; /* Remove the stroke*/
+    fill: transparent /* remove filled color */
+}
